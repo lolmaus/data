@@ -38,7 +38,7 @@ var get = Ember.get, set = Ember.set;
 
   @class ManyArray
   @namespace DS
-  @extends DS.RecordArray
+  @extends Ember.MutableArray, Ember.Evented
 */
 export default Ember.Object.extend(Ember.MutableArray, Ember.Evented, {
   init: function() {
